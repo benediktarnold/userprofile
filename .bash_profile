@@ -1,4 +1,4 @@
-export PATH="$PATH:$HOME/bin/"
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH:$HOME/bin"
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.6)
 
 export CLICOLOR=1

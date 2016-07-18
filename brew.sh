@@ -10,6 +10,10 @@ brew install curl
 brew install maven
 brew install ssh-copy-id
 brew install youtube-dl
+brew install httpie
+brew install ansible
+brew install p7z
+brew install md5sha1sum
 
 echo "Install some apps with brew cask"
 brew tap caskroom/cask
@@ -34,3 +38,7 @@ brew cask install viscosity
 brew cask install vlc
 brew cask install yubikey-neo-manager
 brew cask install tower
+
+echo "cleanup"
+brew cask cleanup
+brew cleanup

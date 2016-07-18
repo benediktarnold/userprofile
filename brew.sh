@@ -1,31 +1,36 @@
 #!/bin/sh
+echo "Installing homebrew"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew install ack \
-    zsh \
-    git \
-    curl \
-    maven \
-    ssh-copy-id \
-    youtube-dl
+echo "Intall homebrew formulas"
+brew install ack 
+brew install zsh 
+brew install git 
+brew install curl
+brew install maven
+brew install ssh-copy-id
+brew install youtube-dl
 
-brew cask install google-chrome \
-    adobe-creative-cloud \
-    intellij-idea \
-    1password \
-    arq \
-    visual-studio-code \
-    bittorrent-sync \
-    beamer \
-    docker \
-    dropbox \
-    garmin-express \
-    iterm2 \
-    istat-menus \
-    libreoffice \
-    logitech-myharmony \
-    skype \
-    sonos \
-    viscosity \
-    vlc \
-    yubikey-neo-manager \
-    tower
+echo "Install some apps with brew cask"
+brew tap caskroom/cask
+brew cask install google-chrome
+brew cask install adobe-creative-cloud
+brew cask install intellij-idea
+brew cask install 1password
+brew cask install arq
+brew cask install visual-studio-code
+brew cask install bittorrent-sync
+brew cask install beamer
+brew cask install docker
+brew cask install dropbox
+brew cask install garmin-express
+brew cask install iterm2
+brew cask install istat-menus
+brew cask install libreoffice
+brew cask install logitech-myharmony
+brew cask install skype
+brew cask install sonos
+brew cask install viscosity
+brew cask install vlc
+brew cask install yubikey-neo-manager
+brew cask install tower

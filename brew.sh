@@ -18,6 +18,7 @@ brew install md5sha1sum
 echo "Install some apps with brew cask"
 brew tap caskroom/cask
 brew cask install google-chrome
+brew cask install firefox
 brew cask install adobe-creative-cloud
 brew cask install intellij-idea
 brew cask install 1password

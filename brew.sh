@@ -8,7 +8,7 @@ brew install p7z
 brew install md5sha1sum
 
 echo "Install some apps with brew cask"
-brew tap caskroom/cask
+brew tap homebrew/cask-cask
 brew cask install google-chrome
 brew cask install firefox
 brew cask install intellij-idea

@@ -2,13 +2,13 @@
 echo "Intall homebrew formulas"
 brew install ack 
 brew install httpie
-brew install httpie
 brew install ansible
 brew install p7z
 brew install md5sha1sum
+brew install watch
+brew install jq
 
 echo "Install some apps with brew cask"
-brew tap homebrew/cask-cask
 brew cask install google-chrome
 brew cask install firefox
 brew cask install intellij-idea

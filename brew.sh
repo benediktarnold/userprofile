@@ -17,6 +17,9 @@ brew cask install docker
 brew cask install dropbox
 brew cask install iterm2
 brew cask install vlc
+brew cask install slack
+brew cask install microsoft-teams
+brew cask install adoptopenjdk11
 
 echo "cleanup"
 brew cask cleanup

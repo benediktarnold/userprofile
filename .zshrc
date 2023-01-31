@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="crunch"
+ZSH_THEME="awesomepanda"
 #eastwood"
 
 # Example aliases
@@ -41,13 +41,13 @@ ZSH_THEME="crunch"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx brew npm docker zsh-kubectl-prompt)
+plugins=(git macos brew npm docker zsh-kubectl-prompt nx-completion)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zprofile
 
 
-export RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
+export RPROMPT='%{$FG[012]%}[$ZSH_KUBECTL_PROMPT]%{$reset_color%}'
 
 # Customize to your needs...
 export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/barnold/bin
@@ -57,3 +57,11 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+eval "$(rbenv init -)"
+
+export PATH="$HOME/.poetry/bin:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
